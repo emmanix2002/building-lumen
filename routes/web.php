@@ -13,4 +13,6 @@
 |
 */
 
-$router->get('/', ['uses' => 'IndexController@getSvgAvatar']);
+$router->get('/', ['uses' => 'IndexController@home']);
+
+$router->post('/divisions', ['uses' => 'CalculatorController@division']);
