@@ -16,3 +16,7 @@
 $router->get('/', ['uses' => 'IndexController@home']);
 
 $router->post('/divisions', ['uses' => 'CalculatorController@division']);
+
+$router->post('/divisions-with-try', ['uses' => 'CalculatorController@divisionWithTryCatch']);
+
+$router->post('/divisions-with-check-and-throw', ['uses' => 'CalculatorController@divisionWithCheckAndThrow']);
